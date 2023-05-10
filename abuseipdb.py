@@ -13,7 +13,7 @@ url = 'https://api.abuseipdb.com/api/v2/check'
 
 headers = {
         'Accept': 'application/json',
-        'Key': '4c90e8c703b5e330f210926a42626c3b7968208e7d1bc088d185d51db03d2cf6f858b24884072fef'
+        'Key': 'Your Key Input'
 }
 
 MAX_AGE_IN_DAYS = '60'
@@ -43,7 +43,6 @@ def check_abuseIP(ip, rows):
     reports = data.get('reports', [])
     report_count = len(reports)
 
-    #result = f'{ip_address},{country_code},{isp},{domain}, {report_count}'
     row = [ip_address, country_code, isp, domain, report_count]
     rows.append(row)0
 
@@ -51,10 +50,7 @@ def check_abuseIP(ip, rows):
     output += f'Country Code:  {country_code}\n'
     output += f'ISP:           {isp}\n'
     output += f'Domain:        {domain}\n'
-    output += f'Report Count:  {report_count}\n'
-    
-    print(json.dumps(decoded_response, sort_keys=True, indent=4))
-    
+    output += f'Report Count:  {report_count}\n'    
     print(output)
 
 def main():
