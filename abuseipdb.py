@@ -73,10 +73,11 @@ def get_reported(reports, report_count):
         for cate in categories:
             tmp_category = get_categories(cate)
             category.append(tmp_category)
+        result_category = ', '.join(category)
 
         reported = f'Reported at : {reportedAt_data} |  '
         #reported += f'Comment : {comment} |  '
-        reported += f'Categories : {category}'
+        reported += f'Categories : {result_category}'
         print('*', reported)
         
     print(f'  {cnt} / {report_count} reports\n')
