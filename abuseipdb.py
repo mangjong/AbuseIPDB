@@ -118,6 +118,8 @@ def check_abuseIP(ip, rows):
 
     if report_count != 0:
         get_reported(reports, report_count)
+    else:
+        print('\n')
         
 def main():
     start_time = time.time()
