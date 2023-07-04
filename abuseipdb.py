@@ -26,7 +26,7 @@ def get_categories(categories):
     category_mapping = {
         1: '11',
         2: '22',
-        3: '33',
+        3: 'Fraud Orders',
         4: 'DDoS Attack',
         5: 'FTP Brute-Force',
         6: '66',
