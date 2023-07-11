@@ -29,7 +29,7 @@ def get_categories(categories):
         3: 'Fraud Orders',
         4: 'DDoS Attack',
         5: 'FTP Brute-Force',
-        6: '66',
+        6: 'Ping of Death',
         7: 'Phishing', 
         8: 'Fraud VoIP',
         9: 'Open Proxy',
