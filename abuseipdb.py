@@ -32,7 +32,7 @@ def get_categories(categories):
         6: '66',
         7: 'Phishing', 
         8: 'Fraud VoIP',
-        9: '99',
+        9: 'Open Proxy',
         10: 'Web Spam',
         11: 'Email Spam',
         12: 'Blog Spam',
