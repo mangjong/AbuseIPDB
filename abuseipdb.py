@@ -24,8 +24,8 @@ def usage():
 
 def get_categories(categories):
     category_mapping = {
-        1: '11',
-        2: '22',
+        1: 'DNS Compromise',
+        2: 'DNS Poisoning',
         3: 'Fraud Orders',
         4: 'DDoS Attack',
         5: 'FTP Brute-Force',
